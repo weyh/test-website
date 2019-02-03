@@ -1,0 +1,99 @@
+* {
+  transition: 2s;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#lock{
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #2d3e50;
+  color: #fff;
+}
+
+.cont {
+  margin-top: 5%;
+}
+
+.title {
+  visibility: hidden;
+  background-color: #ecf0f1;
+  box-shadow: 0px 0px 20px #fff;
+  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 2%;
+  margin-left: 0;
+  margin-bottom: 32%;
+  padding-top: 3.5%;
+  padding-bottom: 3.5%;
+}
+
+.txt {
+  visibility: hidden;
+  background-color: #ecf0f1;
+  box-shadow: 0px 0px 15px #fff;
+  border-radius: 10px;
+  margin: 2%;
+  padding-bottom: 15%;
+  color: #000;
+}
+
+h1 {
+  text-align: center;
+  color: #e84c3d;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.l {
+  font-size: 2em;
+  margin-left: 3%;
+  padding-top: 20%;
+}
+
+.l:hover{
+  font-size: 2.05em;
+  color: #0f823f;
+}
+
+.top {
+  padding-top: 10%;
+}
+
+.exit, .e{
+  transition: 3s;
+}
+
+.exit {
+  visibility: hidden;
+  background-color: #ecf0f1;
+  box-shadow: 0px 0px 10px #fff;
+  border-radius: 10px;
+  width: 40%;
+  margin: 2%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  transition: 1s;
+}
+
+.exit:hover{
+  background-color: #fff;
+  box-shadow: 0px 0px 15px #fff;
+}
+
+.e:hover{
+  color: #ff0000;
+}

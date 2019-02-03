@@ -1,0 +1,67 @@
+body {
+  margin: 0.5em;
+}
+
+#t {
+  margin: 0;
+  padding: 0;
+  width: 75%;
+}
+
+#c {
+  padding: 5px;
+  font-family: "Arial", Arial, Sans-serif;
+}
+
+.char {
+  font-family: "Arial", Arial, Sans-serif;
+  position: fixed;
+  top: 10.5em;
+  left: 75%;
+  z-index: 2;
+  margin: 0.5em;
+}
+
+.console {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  width: 50%;
+  height: auto;
+  z-index: 1;
+  text-align: right;
+  font-family: "Arial", Arial, Sans-serif;
+  font-size: 2em;
+}
+
+.spaces {
+  position: fixed;
+  top: 2em;
+  right: 0;
+  padding: 10px;
+  width: 50%;
+  height: auto;
+  z-index: 1;
+  text-align: right;
+  font-family: "Arial", Arial, Sans-serif;
+  font-size: 2em;
+}
+
+.special {
+  position: fixed;
+  top: 4em;
+  right: 0;
+  padding: 10px;
+  width: 50%;
+  height: auto;
+  z-index: 1;
+  text-align: right;
+  font-family: "Arial", Arial, Sans-serif;
+  font-size: 2em;
+}
+
+.btn {
+  margin-top: 2%;
+  font-family: "Arial", Arial, Sans-serif;
+}

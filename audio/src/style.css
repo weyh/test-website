@@ -1,0 +1,70 @@
+:root {
+    --red: #e76f51;
+    --orange: #f4a261;
+    --yellow: #e9c46a;
+    --green: #2a9d8f;
+    --blue: #1ea4eb;
+    --gray: #889aa8;
+    --black: #1a2632;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.appended{
+    margin-right: 0.25em;
+    width: 250px;
+    display: inline-block;
+    padding: 1%;
+    border: 1px solid #000;
+}
+
+.aMargin{
+    margin-left: 2em;
+}
+
+.container {
+    position: relative;
+}
+
+.logo {
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+name {
+    color: var(--green);
+}
+
+composer {
+    font-family: 'Rajdhani', sans-serif;
+}
+composer_name {
+    font-size: 0.8em;
+    font-family: 'Bad Script', cursive;
+}
+
+royalty {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+a:link {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--green);
+}
+
+a:visited {
+    color: var(--red);
+}
+
+a:active {
+    color: #fff;
+    background-color: #264653;
+}

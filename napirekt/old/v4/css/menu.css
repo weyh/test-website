@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+/* CSS Document */
+html{
+  overflow-x: hidden;
+}
+
+header {
+  float: left;
+  position: fixed;
+}
+
+nav a {
+  font-family: 'Bubbler One', sans-serif;
+  color: #fff;
+}
+
+#menu {
+  padding-top: 16px;
+}
+
+#back{
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  width: 0;
+  float: left;
+  background: none;
+  z-index: -1000;
+}
+
+.menuplus:active #back{
+  height: 100%;
+  width: 150px;
+  background-color: #fff;
+  z-index: 99;
+}
+/*gomb padding*/
+
+#menuimg {
+  z-index: 99;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+.menu {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.menu-open {
+  left: 231px;
+}
+
+.menu-open .menu-side {
+  left: 0;
+}
+
+.menu-side, .menu {
+  -webkit-transition: left 1s ease;
+  -moz-transition: left 1s ease;
+  -o-transition: left 1s ease;
+  -ms-transition: left 1s ease;
+  transition: left 1s ease;
+}
+
+.menu-side {
+  background: #333;
+  border-right: 1px solid #fff;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -231px;
+  text-decoration: none;
+  width: 210px;
+  height: 100%;
+  padding: 10px;
+}
+
+.gplus{
+  font-family: 'Candal', sans-serif;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: block;
+  margin-top: 5px;
+  margin-left: 12%;
+  width: 78%;
+  padding: 10px 50px 10px 10px;
+  background: url(u.png) no-repeat 95% center;
+  background-color: #222;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px #fff solid;
+}
+
+#menuabout{
+  left: 0;
+  width: 210px;
+  text-align: center;
+  position: fixed;
+  margin-top: 69% !important;
+  display: none;
+}
+
+#cookie {
+  color: #ccc;
+  left: 2.8%;
+  width: 210px;
+  text-align: right;
+  position: fixed;
+  margin-top: 69% !important;
+  display: none;
+}
+
+
+#dev{
+  z-index: 999;
+  position: fixed;
+  float: left;
+  top: -15%;
+  border-radius: 50px;
+  background-color: rgba(192, 192, 192, 0.8);
+  border: 1px #000 solid;
+  width: 85%;
+  margin-left: 7.5%;
+  padding: 1%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  font-size: 1.1em;
+  font-family: 'Nunito Sans', sans-serif;
+}
