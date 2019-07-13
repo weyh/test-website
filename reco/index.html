@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Reco</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="channels"></div>
+    <div class="playlists"></div>
+    <div class="sites"></div>
+    <div class="tools"></div>
+    <div class="myCodeExtensions"></div>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    function openInNewTab(url) {
+      var win = window.open(url, "_blank");
+      win.focus();
+    }
+
+    $(document).ready(
+      $.getJSON("data.json", data => {
+        $(".channels").append(
+          `<h2>${data.template.types.channels.name}</h2>`
+        );
+
+        $.each(data.channels, (i, channel) => {
+          $(".channels").append(
+            data.template.types.channels.boilerplate
+            .replace(/\${name}/g, channel["name"])
+            .replace(/\${imgUrl}/g, channel["imgUrl"])
+            .replace(/\${channelUrl}/g, channel["channelUrl"])
+            .replace(/\${description}/g, channel["description"])
+          );
+
+          $(".channels").append(data.template.spacer);
+        });
+
+        $(".playlists").append(
+          `<h2 style="margin-top: 1em">${data.template.types.playlists.name}</h2>`
+        );
+
+        $(".playlists").append("<ul style='font-size: 1.07em'></ul>");
+
+        $.each(data.playlists, (i, playlist) => {
+          $(".playlists ul").append(
+            data.template.types.playlists.boilerplate
+            .replace(/\${name}/g, playlist["name"])
+            .replace(/\${url}/g, playlist["url"])
+          );
+        });
+
+        $(".sites").append(
+          `<h2 style="margin-top: 1em">${data.template.types.sites.name}</h2>`
+        );
+
+        $(".sites").append("<ul style='font-size: 1.07em'></ul>");
+
+        $.each(data.sites, (i, site) => {
+          $(".sites ul").append(
+            data.template.types.sites.boilerplate
+            .replace(/\${name}/g, site["name"])
+            .replace(/\${url}/g, site["url"])
+          );
+        });
+
+        $(".tools").append(
+          `<h2 style="margin-top: 1em">${data.template.types.tools.name}</h2>`
+        );
+
+        $(".tools").append("<ul style='font-size: 1.07em'></ul>");
+
+        $.each(data.tools, (i, tool) => {
+          $(".tools ul").append(
+            data.template.types.tools.boilerplate
+            .replace(/\${name}/g, tool["name"])
+            .replace(/\${url}/g, tool["url"])
+            .replace(/\${description}/g, tool["description"])
+          );
+        });
+
+        $(".myCodeExtensions").append(
+          `<h2 style="margin-top: 1em">${data.template.types.myCodeExtensions.name}</h2>`
+        );
+
+        $(".myCodeExtensions").append("<ul></ul>");
+
+        $.each(data.myCodeExtensions, (i, extension) => {
+          $(".myCodeExtensions ul").append(
+            data.template.types.myCodeExtensions.boilerplate
+            .replace(/\${name}/g, extension["name"])
+            .replace(/\${url}/g, extension["url"])
+          );
+        });
+      })
+    );
+  </script>
+</body>
+
+</html>
