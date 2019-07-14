@@ -190,16 +190,6 @@
   ],
 
   "tools": [{
-      "name": "waifu2x",
-      "url": "https://github.com/nagadomi/waifu2x",
-      "description": "Image upscaling app"
-    },
-    {
-      "name": "Video2X",
-      "url": "https://github.com/k4yt3x/video2x",
-      "description": "Video upscaling app"
-    },
-    {
       "name": "Visual Studio 2019 (IDE)",
       "url": "https://visualstudio.microsoft.com/vs/",
       "description": "C#, Python, C, C++, Web"
@@ -223,6 +213,16 @@
       "name": "VirtualBox",
       "url": "https://www.virtualbox.org",
       "description": "For multi platform testing"
+    },
+    {
+      "name": "waifu2x",
+      "url": "https://github.com/nagadomi/waifu2x",
+      "description": "Image upscaling app"
+    },
+    {
+      "name": "Video2X",
+      "url": "https://github.com/k4yt3x/video2x",
+      "description": "Video upscaling app"
     }
   ],
 
