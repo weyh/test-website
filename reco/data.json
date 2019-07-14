@@ -205,6 +205,11 @@
       "description": "C# Game Dev"
     },
     {
+      "name": "Android Studio",
+      "url": "https://developer.android.com/studio",
+      "description": "For building Android apps (Java, Kotlin)"
+    },
+    {
       "name": "AutoHotkey",
       "url": "https://www.autohotkey.com",
       "description": "Hotkeys for better workflow"
