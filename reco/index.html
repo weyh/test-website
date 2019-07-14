@@ -27,8 +27,8 @@
   </div>
   </div>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- JavaScript -->
+  <!-- jQuery first, then Popper.js, Bootstrap JS, then mobile-detect.js-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -37,7 +37,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.3/mobile-detect.min.js"></script>
   <script>
+    const isMobile = new MobileDetect(window.navigator.userAgent).os() != null;
+
     function openInNewTab(url) {
       var win = window.open(url, "_blank");
       win.focus();
@@ -48,6 +51,8 @@
         $(".channels").append(
           `<h2>${data.template.types.channels.name}</h2>`
         );
+
+        var channel_list = []
 
         $.each(data.channels, (i, channel) => {
           $(".channels").append(
@@ -60,6 +65,14 @@
 
           $(".channels").append(data.template.spacer);
         });
+
+        if (!isMobile)
+          $(".channels .scale").addClass("w-50");
+        else {
+          $(".channels #moby").attr('style', 'font-size: .8em');
+          $(".channels .scale").addClass("mt-2");
+        }
+
 
         $(".playlists").append(
           `<h2 style="margin-top: 1em">${data.template.types.playlists.name}</h2>`

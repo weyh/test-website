@@ -3,7 +3,7 @@
     "types": {
       "channels": {
         "name": "Youtube Channels:",
-        "boilerplate": "<div class='row w-50 animated fadeIn fast scale'><div class='col-6 col-sm-1' onclick=\"openInNewTab('${channelUrl}')\" style='text-align: center; cursor: pointer;'> <img src='${imgUrl}' alt='${name}' height='46em' /> </div> <div class='col'> <div class='row' style='padding-left: 1em !important; cursor: pointer;' onclick=\"openInNewTab('${channelUrl}')\"> <div class='col'><a href='javascript:;'>${name}</a></div> <div class='w-100 d-none d-md-block'></div> <div class='col'>${description}</div> </div> </div> </div> </div>"
+        "boilerplate": "<div class='row animated fadeIn fast scale'><div class='col-6 col-sm-1' onclick=\"openInNewTab('${channelUrl}')\" style='text-align: center; cursor: pointer;'> <img src='${imgUrl}' alt='${name}' height='46em' /> </div> <div class='col'> <div class='row' style='padding-left: 1em !important; cursor: pointer;' onclick=\"openInNewTab('${channelUrl}')\"> <div class='col-sm'><a href='javascript:;'>${name}</a></div> <div class='w-100 d-none d-md-block'></div> <div class='col' id='moby'>${description}</div> </div> </div> </div> </div>"
       },
       "playlists": {
         "name": "Playlists:",
