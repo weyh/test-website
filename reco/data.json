@@ -15,7 +15,7 @@
       },
       "tools": {
         "name": "Programs:",
-        "boilerplate": "<li class='animated fadeIn fast scaleL'> <a href='${url}' target='_blank'>${name}</a> <div style='margin-left: 1.4em'>${description}</div> </li>"
+        "boilerplate": "<li class='animated fadeIn fast scaleL'> <a href='${url}' target='_blank'>${name}</a> <div>${description}</div> </li>"
       },
       "myCodeExtensions": {
         "name": "Visual Studio Code Extensions:",
