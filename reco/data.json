@@ -332,6 +332,10 @@
       "url": "https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense"
     },
     {
+      "name": "Paste JSON as Code",
+      "url": "https://marketplace.visualstudio.com/items?itemName=quicktype.quicktype"
+    },
+    {
       "name": "Path Intellisense",
       "url": "https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense"
     },
