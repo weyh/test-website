@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/test-website/reco/static/css/main.664cdf51.chunk.css",
+    "main.js": "/test-website/reco/static/js/main.f827306d.chunk.js",
+    "main.js.map": "/test-website/reco/static/js/main.f827306d.chunk.js.map",
+    "runtime~main.js": "/test-website/reco/static/js/runtime~main.a8f401f5.js",
+    "runtime~main.js.map": "/test-website/reco/static/js/runtime~main.a8f401f5.js.map",
+    "static/js/2.73977e91.chunk.js": "/test-website/reco/static/js/2.73977e91.chunk.js",
+    "static/js/2.73977e91.chunk.js.map": "/test-website/reco/static/js/2.73977e91.chunk.js.map",
+    "index.html": "/test-website/reco/index.html",
+    "precache-manifest.e84cbd69be1bd0b1a1e9fa5b853bace0.js": "/test-website/reco/precache-manifest.e84cbd69be1bd0b1a1e9fa5b853bace0.js",
+    "service-worker.js": "/test-website/reco/service-worker.js",
+    "static/css/main.664cdf51.chunk.css.map": "/test-website/reco/static/css/main.664cdf51.chunk.css.map"
+  }
+}
