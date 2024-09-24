@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justmd</title>
+    <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
+    <style>
+      #md {
+        margin-left: 1em;
+        border-radius: var(--input-border-radius);
+      }
+    </style>
+  </head>
+  <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars m-0 p-0" data-dm-shortcut-enabled="true"
+    data-sidebar-shortcut-enabled="true" data-set-preferred-theme-onload="true">
+    <div class="page-wrapper m-0 p-10 d-flex h-full">
+      <div class="m-auto h-full w-full container-fluid">
+        <div class="row h-full">
+          <textarea class="col-md form-control h-full w-lg-half"></textarea>
+          <div class="col-md h-full w-lg-half d-sm-none d-md-block" id="md"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
