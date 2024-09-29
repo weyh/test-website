@@ -1,0 +1,10 @@
+#md h1,
+h2 {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #3d444d;
+}
+
+textarea {
+  resize: none;
+}

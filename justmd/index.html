@@ -5,27 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justmd</title>
     <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css" rel="stylesheet" />
-    <style>
-      #md {
-        margin-left: 1em;
-        border-radius: var(--input-border-radius);
-        overflow: auto;
-      }
-
-      #md h1, h2 {
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #3d444d;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars m-0 p-0" data-dm-shortcut-enabled="true"
     data-sidebar-shortcut-enabled="true" data-set-preferred-theme-onload="true">
     <div class="page-wrapper m-0 p-10 d-flex h-full">
       <div class="m-auto h-full w-full container-fluid">
         <div class="row h-full">
-          <textarea class="col-md form-control h-full w-lg-half"></textarea>
-          <div class="col-md h-full w-lg-half d-sm-none d-md-block" id="md"></div>
+          <textarea class="col-md form-control h-half h-md-full w-lg-half mr-md-5 mb-5 mb-md-0 border"></textarea>
+          <div class="col-md h-half h-md-full w-lg-half overflow-auto ml-md-5 mt-5 mt-md-0 p-10 border rounded" id="md">
+          </div>
         </div>
       </div>
     </div>
